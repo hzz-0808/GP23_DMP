@@ -199,6 +199,8 @@ object Log2parquet {
         String2Type.toInt(arr(84))
       )
     }).toDF()
+
+ //   df.show()
     df.write.parquet(outputDir)
     sparkSession.stop()
   }
